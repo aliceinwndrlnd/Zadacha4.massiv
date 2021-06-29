@@ -9,7 +9,7 @@ public class Main {
 массив на экран в строку. Замените каждый элемент с нечётным индексом на
 ноль. Снова выведете массив на экран на отдельной строке. */
 
-        int arr[] = new int[20];
+        int[] arr = new int[20];
         for (int i = 0; i < arr.length; i++) {
             Random rnd = new Random();
             arr[i] = rnd.nextInt(21);
@@ -19,9 +19,10 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 != 0)
                 arr[i] = 0;
-                System.out.print(arr[i] + " ");
-            }
+            System.out.print(arr[i] + " ");
         }
     }
+}
+
 
 
